@@ -7,7 +7,13 @@
 </head>
 <body>
     <script>
-        
+        function computerPlay() {
+            let computerPlay = Math.floor(Math.random() * (4 - 1)) + 1; // Generate random number between 1 and 3
+
+            if (computerPlay === 1) return "Rock";
+            else if (computerPlay === 2) return "Paper";
+            else return "Scissors";
+        }
     </script>
 </body>
 </html>
