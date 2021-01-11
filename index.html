@@ -5,15 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
 </head>
-<body>
+<body onload="game()">
     <script>
         function computerPlay() {
             let computerPlay = Math.floor(Math.random() * (4 - 1)) + 1; // Generate random number between 1 and 3
-
-            if (computerPlay === 1) return "Rock";
-            else if (computerPlay === 2) return "Paper";
-            else return "Scissors";
+            
+            return computerPlay === 1 ? "rock" : computerPlay === 2 ? "paper" : "scissors";
         }
+
+        function game() {
+            let playerScore = 0;
+            let computerScore = 0;
+            let finalResult = "";
+
+            for (let i = 0; i < 5; i++) {
+                let result = "";
+                let computerSelection = computerPlay();
+                let playerSelection = prompt("Rock, Paper or Scissors?");
+                playerSelection = playerSelection.toLowerCase();
+
+                if (playerSelection === "rock") {
+                    if (computerSelection === "scissors") {
+                        playerScore++;
+                        result = "Player wins!";
+                    } else if (computerSelection === "paper") {
+                        computerScore++;
+                        result = "Computer wins!";
+                    } else {
+                        playerScore++;
+                        computerScore++;
+                        result = "Draw match!";
+                    }
+                } else if (playerSelection === "paper") {
+                    if (computerSelection === "rock") {
+                        playerScore++;
+                        result = "Player wins!";
+                    } else if (computerSelection === "scissors") {
+                        computerScore++;
+                        result = "Computer wins!";
+                    } else {
+                        playerScore++;
+                        computerScore++;
+                        result = "Draw match!";
+                    }
+                } else if (playerSelection === "scissors") {
+                    if (computerSelection === "paper") {
+                        playerScore++;
+                        result = "Player wins!";
+                    } else if (computerSelection === "rock") {
+                        computerScore++;
+                        result = "Computer wins!";
+                    } else {
+                        playerScore++;
+                        computerScore++;
+                        result = "Draw match!";
+                    }
+                } else {
+                    result = "Invalid value!";
+                }
+
+                console.log(`Player: ${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)}\nComputer: ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}\nResult: ${result}`);
+            }
+
+            finalResult = playerScore > computerScore ? "Player wins!" : playerScore < computerScore ? "Computer wins" : "Draw match!";
+            
+            console.log(`Player score: ${playerScore}\nComputer score: ${computerScore}\nFinal result: ${finalResult}`);
+       }
     </script>
 </body>
 </html>
