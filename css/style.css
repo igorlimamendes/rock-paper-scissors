@@ -12,3 +12,16 @@ body {
     h1, h2, h3, p {
         margin: 0;
     }
+    
+    .container {
+        text-align: center;
+        padding: 0 1em;
+    }
+
+/* Title */
+.title {
+    padding: 1em 0;
+}
+    .title__text {
+        font-size: 4em;
+    }
