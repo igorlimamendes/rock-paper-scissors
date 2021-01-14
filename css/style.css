@@ -25,3 +25,31 @@ body {
     .title__text {
         font-size: 4em;
     }
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3.5em 0;
+}
+    .buttons__btnBox {
+        width: 10em;
+    }
+        .buttons__btnBox--button {
+            border: none;
+            outline: none;
+            background: none;
+            width: 100%;
+            color: #fffafa;
+            padding: 1.5em 0;
+        }
+            .buttons__btnBox--button:hover {
+                color: #adff2f;
+                cursor: pointer;
+            }
+
+            .buttons__btnBox .far {
+                font-size: 4em;
+            }
