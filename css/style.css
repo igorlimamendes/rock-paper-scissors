@@ -53,3 +53,18 @@ body {
             .buttons__btnBox .far {
                 font-size: 4em;
             }
+
+/* Picks */
+.picks {
+    padding-bottom: 4.5em;
+}
+    .picks__textBox {
+        width: 30em;
+        text-align: left;
+        margin: 0 auto;
+        padding-left: 8em;
+    }
+        .picks__textBox--text {
+            font-size: 1.4em;
+            line-height: 2;
+        }
