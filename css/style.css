@@ -1,0 +1,14 @@
+/* General style */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #292323;
+    color: #adff2f;
+    font-family: monospace;
+    font-size: 10px;
+}
+    h1, h2, h3, p {
+        margin: 0;
+    }
