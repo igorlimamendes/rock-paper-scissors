@@ -65,3 +65,20 @@ body {
             font-size: 1.4em;
             line-height: 2;
         }
+
+/* Headings */
+.headings {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 30em;
+    margin: 0 auto;
+    padding-bottom: 5em;
+}
+    .headings__titleBox {
+        line-height: 1.6;
+    }
+        .headings__titleBox--name,
+        .headings__titleBox--score {
+            font-size: 2.5em;
+        }
