@@ -51,12 +51,12 @@ body {
             }
 
 /* Picks */
-.picks__textBox {
+.picksTextBox {
     max-width: 17em;
     text-align: left;
     margin: 0 auto;
 }
-    .picks__textBox--text {
+    .picksTextBox--text {
         font-size: 1.4em;
         line-height: 2;
     }
