@@ -55,13 +55,14 @@ buttons.forEach((button) => {
             }
         }
     });
+});
 
-    reset.addEventListener("click", () => {
-        playerPick.innerHTML = "Player: ????????";
-        computerPick.innerHTML = "Computer: ????????";
-        playerScore.innerHTML = 0;
-        computerScore.innerHTML = 0;
-        playScore = 0;
-        compScore = 0;
-    });
+// Reset to default values
+reset.addEventListener("click", () => {
+    playerPick.innerHTML = "Player: ????????";
+    computerPick.innerHTML = "Computer: ????????";
+    playerScore.innerHTML = 0;
+    computerScore.innerHTML = 0;
+    playScore = 0;
+    compScore = 0;
 });
