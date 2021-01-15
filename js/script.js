@@ -24,8 +24,9 @@ buttons.forEach((button) => {
 
         let computerSelection = computerPlay();
 
-        playerPick.innerHTML = `Player: ${userClickBtn.id.charAt(0).toUpperCase() + userClickBtn.id.slice(1)}`;
-        computerPick.innerHTML = `Computer: ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}`;
+        // Change picks default text to player and computer pick values
+        playerPick.innerHTML = `Player: ${userClickBtn.id.charAt(0).toUpperCase() + userClickBtn.id.slice(1)}`; // Turn pick first letter uppercase
+        computerPick.innerHTML = `Computer: ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}`; // Turn pick first letter uppercase
 
         if (userClickBtn === btnRock) {
             if (computerSelection === "scissors") {
