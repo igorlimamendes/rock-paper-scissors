@@ -15,8 +15,9 @@ buttons.forEach((button) => {
         // User have click in one of the three buttons
         let userClickBtn = event.target;
 
+        // Generate computer's random value
         function computerPlay() {
-            let computerPlay = Math.floor(Math.random() * (4 - 1)) + 1; // Generate random number between 1 and 3
+            let computerPlay = Math.floor(Math.random() * (4 - 1)) + 1; // Random number between 1 and 3
             
             return computerPlay === 1 ? "rock" : computerPlay === 2 ? "paper" : "scissors";
         }
