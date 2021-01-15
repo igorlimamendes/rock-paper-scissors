@@ -1,3 +1,4 @@
+// Variables
 const buttons = document.querySelectorAll(".buttons__btnBox");
 const btnRock = document.querySelector("#rock");
 const btnPaper = document.querySelector("#paper");
