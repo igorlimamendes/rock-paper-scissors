@@ -28,7 +28,8 @@ buttons.forEach((button) => {
         playerPick.innerHTML = `Player: ${playerClickBtn.id.charAt(0).toUpperCase() + playerClickBtn.id.slice(1)}`; // Turn pick first letter uppercase
         computerPick.innerHTML = `Computer: ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}`; // Turn pick first letter uppercase
 
-        if (playerClickBtn === btnRock) {
+        // Game logic
+        if (playerClickBtn === btnRock) { // Player have pick Rock
             if (computerSelection === "scissors") {
                 playScore++;
                 playerScore.innerHTML = playScore;
@@ -36,7 +37,7 @@ buttons.forEach((button) => {
                 compScore++;
                 computerScore.innerHTML = compScore;
             }
-        } else if (playerClickBtn === btnPaper) {
+        } else if (playerClickBtn === btnPaper) { // Player have pick Paper
             if (computerSelection === "rock") {
                 playScore++;
                 playerScore.innerHTML = playScore;
@@ -44,7 +45,7 @@ buttons.forEach((button) => {
                 compScore++;
                 computerScore.innerHTML = compScore;
             }
-        } else {
+        } else { // Player have pick Scissors
             if (computerSelection === "paper") {
                 playScore++;
                 playerScore.innerHTML = playScore;
