@@ -12,8 +12,8 @@ let compScore = 0;
 
 buttons.forEach((button) => {
     button.addEventListener("click", function (event) {
-        // User have click in one of the three buttons
-        let userClickBtn = event.target;
+        // Player have click in one of the three buttons
+        let playerClickBtn = event.target;
 
         // Generate computer's random value
         function computerPlay() {
@@ -25,10 +25,10 @@ buttons.forEach((button) => {
         let computerSelection = computerPlay();
 
         // Change picks default text to player and computer pick values
-        playerPick.innerHTML = `Player: ${userClickBtn.id.charAt(0).toUpperCase() + userClickBtn.id.slice(1)}`; // Turn pick first letter uppercase
+        playerPick.innerHTML = `Player: ${playerClickBtn.id.charAt(0).toUpperCase() + playerClickBtn.id.slice(1)}`; // Turn pick first letter uppercase
         computerPick.innerHTML = `Computer: ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}`; // Turn pick first letter uppercase
 
-        if (userClickBtn === btnRock) {
+        if (playerClickBtn === btnRock) {
             if (computerSelection === "scissors") {
                 playScore++;
                 playerScore.innerHTML = playScore;
@@ -36,7 +36,7 @@ buttons.forEach((button) => {
                 compScore++;
                 computerScore.innerHTML = compScore;
             }
-        } else if (userClickBtn === btnPaper) {
+        } else if (playerClickBtn === btnPaper) {
             if (computerSelection === "rock") {
                 playScore++;
                 playerScore.innerHTML = playScore;
