@@ -7,7 +7,7 @@ const playerPick = document.querySelector(".picks .picks__textBox:nth-of-type(1)
 const computerPick = document.querySelector(".picks .picks__textBox:nth-of-type(2) p");
 const playerScore = document.querySelector(".headings .headings__titleBox:nth-of-type(1) h3");
 const computerScore = document.querySelector(".headings .headings__titleBox:nth-of-type(2) h3");
-const reset = document.querySelector(".reset__btnBox--button");
+const reset = document.querySelector(".resetBtn");
 let playScore = 0;
 let compScore = 0;
 

@@ -79,7 +79,7 @@ body {
         }
 
 /* Reset */
-.reset__btnBox--button {
+.resetBtn {
     border: .2em solid #fffafa;
     outline: none;
     border-radius: .5em;
@@ -91,7 +91,7 @@ body {
     transition: all .2s linear;
     padding: .4em 1.5em;
 }
-    .reset__btnBox--button:hover {
+    .resetBtn:hover {
         cursor: pointer;
         border-color: #adff2f;
         background: #292323;
