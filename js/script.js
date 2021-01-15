@@ -12,7 +12,8 @@ let compScore = 0;
 
 buttons.forEach((button) => {
     button.addEventListener("click", function (event) {
-        let btn = event.target;
+        // User have click in one of the three buttons
+        let userClickBtn = event.target;
 
         function computerPlay() {
             let computerPlay = Math.floor(Math.random() * (4 - 1)) + 1; // Generate random number between 1 and 3
@@ -22,10 +23,10 @@ buttons.forEach((button) => {
 
         let computerSelection = computerPlay();
 
-        playerPick.innerHTML = `Player: ${btn.id.charAt(0).toUpperCase() + btn.id.slice(1)}`;
+        playerPick.innerHTML = `Player: ${userClickBtn.id.charAt(0).toUpperCase() + userClickBtn.id.slice(1)}`;
         computerPick.innerHTML = `Computer: ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}`;
 
-        if (btn === btnRock) {
+        if (userClickBtn === btnRock) {
             if (computerSelection === "scissors") {
                 playScore++;
                 playerScore.innerHTML = playScore;
@@ -33,7 +34,7 @@ buttons.forEach((button) => {
                 compScore++;
                 computerScore.innerHTML = compScore;
             }
-        } else if (btn === btnPaper) {
+        } else if (userClickBtn === btnPaper) {
             if (computerSelection === "rock") {
                 playScore++;
                 playerScore.innerHTML = playScore;
