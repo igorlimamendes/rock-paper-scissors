@@ -10,6 +10,7 @@ const reset = document.querySelector(".reset__btnBox--button");
 let playScore = 0;
 let compScore = 0;
 
+// Buttons boxes section
 buttons.forEach((button) => {
     button.addEventListener("click", function (event) {
         // Player have click in one of the three buttons
