@@ -20,7 +20,7 @@ The following will be instructions on how you can see the project on your own co
 
 ### Prerequisites
 Linux, macOS, Windows, or similar.\
-Chrome, Firefox, Safari, Opera or similar.
+Chrome, Firefox, Safari, Opera, or similar.
 
 ### Setup
 Download or clone the git repository.
