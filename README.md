@@ -19,8 +19,8 @@ Implementation of a Rock Paper Scissors game.
 The following will be instructions on how you can see the project on your own computer.
 
 ### Prerequisites
-Linux, macOS, Windows, or similar.\
-Chrome, Firefox, Safari, Opera, or similar.
+Linux, macOS, Windows or similar.\
+Chrome, Firefox, Safari, Opera or similar.
 
 ### Setup
 Download or clone the git repository.
